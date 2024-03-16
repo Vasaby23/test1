@@ -1,0 +1,1148 @@
+.header1{
+    height: 50px;
+    width: 100% ;
+
+}
+
+.img-header{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+.Features{
+    margin-left: 800px;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size:20px;
+    color: rgb(102,102,102,1) ;
+    position: absolute;
+    margin-top: -35px;
+
+}
+
+
+.Discover{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: -35px;
+
+}
+
+.Templates{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size:20px;
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: -35px;
+
+}
+
+.Updates{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 1550px;
+    margin-top: -35px;
+
+}
+
+.name{
+    font-family: "Russo One", sans-serif;
+    font-size: 30px;
+  color: #328ffe;
+  margin-left: 70px;
+  margin-top: -30px;
+
+} 
+
+
+.item{align-items: center;
+display: flex;
+flex: none;
+flex-direction: row;
+flex-wrap: nowrap;
+gap: 20px;
+height: min-content;
+justify-content: center;
+overflow: visible;
+padding: 0;
+position: relative;
+width: min-content;
+padding-top: -10px;
+position: absolute;
+}
+
+.img-shop{
+    width: 100%;
+    height: 1305px;
+}
+.name-islands{
+    align-items: center;
+    background-color: #a6e1fa;
+    border-radius: 20px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 20px 40px;
+    position: relative;
+    width: 80%;
+    will-change: var(--framer-will-change-override, transform);
+
+   
+}
+
+.text{
+    font-size: 130px;
+    font-family: cursive;
+    --framer-text-transform: uppercase;
+    margin: 0 auto; /* Додаємо автоматичні відступи зверху і знизу, а горизонтальне вирівнювання встановлюється автоматично */
+    height: 200px;
+    z-index: 101;
+    background-color: #a6e1fa;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 20px 40px;
+    position: relative;
+    width: 80%;
+    will-change: var(--framer-will-change-override, transform);
+    margin-top: -800px;
+}
+
+@media (max-width: 1350px) {
+    .text {
+        font-size: 80px;
+    }
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    height: 4rem;
+}
+.burger-wrapper {
+  cursor: pointer;
+}
+#meny {
+    background: #328efeaf;
+    width: 50rem;
+    height: 900px;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(50rem);
+    top: 0;
+    z-index: 102;
+    transition: 0.5s;
+    border-radius: 0px 0px 10px 10px;
+}
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked ~ #meny {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#burger > div {
+    height: 2px;
+    background-color: #000;
+    transition: 0.5s;
+    z-index: 999;
+}
+.burger{
+    display: none;
+}
+#menyAvPaa:checked ~ #burger > div {
+  background-color: #fff;
+}
+
+#menyAvPaa:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+#menyAvPaa:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+}
+#menyAvPaa:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: block; /* Показуємо #burger, коли ширина екрану менше або дорівнює 900px */
+    }
+    .Features, .Discover, .Updates, .Templates {
+        display: none; /* Приховуємо .Features, .Discover, .Updates, .Templates, коли ширина екрану менше або дорівнює 900px */
+    }
+}
+@media (max-width: 810px) {
+    .text {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .Features, .Discover , .Updates , .Templates{
+        display: none;
+    }
+    #meny{
+        width: 400px;
+        height: 600px
+    }
+    .img-shop{
+        height: 900px;
+    }
+    .text{
+        top: 200px;
+    }
+}
+
+
+
+
+.Features-burger{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 140px;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.Discover-burger{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+  
+    padding: 10px 0px 10px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 140px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Templates-burger{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 140px;
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+.Updates-burger{
+    color: rgb(102,102,102,1) ;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+
+    padding: 10px 0px 10px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 140px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+  
+  #meny li {
+    list-style: none;
+    position: relative;
+    display: inline;
+  }
+  
+  #menyli a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  
+  #meny li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    background: #333;
+    transition: all 0.45s;
+  }
+  
+  #meny li:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  #menyli a:hover {
+    text-decoration: none;
+  }
+
+
+.info1{
+    background-color: #0a2472;
+    margin-top: 400px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.wsp{
+    color: #a6e1fa;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: Orelega One;
+    margin-left: 1300px
+}
+
+.info1-1{
+    margin-left: 1300px;
+    width: 500px;
+    color: #a6e1fa;
+    font-family:  Shinty;
+    font-size: 30px;
+   line-height: 50px;
+}
+
+
+.my-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 103;
+    margin:200px 0 0 200px;
+    position: absolute;
+}
+
+.world {
+    margin: 260px 0 0 260px;
+    font-size: 40px;
+    z-index: 104;
+    position: absolute;
+}
+
+
+
+
+    .why-use{
+        background-color: #0a2472;
+        margin-top: 900px;
+        width: 100%;
+        height: 1500px;
+        position: absolute;
+
+    }
+    
+.house{
+    width: 480px;
+    height: 480px;
+    z-index: 103;
+    margin:200px 0 0 600px;
+    border-radius:40px;
+    position: absolute;
+    object-fit: cover;
+    image-rendering: auto;
+    filter: blur(0.1px) ;
+    margin-top: 200px;
+    
+}
+
+.Choose{
+    color: #a6e1fa;
+    margin-top: 350px;
+    font-size: 50px;
+    font-family: "Space Mono", monospace;
+    margin-left: 1150px;
+    position: relative;
+}
+
+.Travel{
+    color: #a6e1fa;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family:"Space Mono", monospace;
+    margin-left: 1150px;
+    width: 700px;
+    
+}
+
+.bar{
+        width: 480px;
+        height: 480px;
+        z-index: 103;
+        margin:200px 0 0 1300px;
+        border-radius:40px;
+        position: absolute;
+        object-fit: cover;
+        image-rendering: auto;
+        filter: blur(0.1px) ;
+        margin-top: 200px;
+        filter: grayscale(90%);
+
+}
+
+.our{
+    color: #a6e1fa;
+    margin-top: 350px;
+    font-size: 50px;
+    font-family: "Space Mono", monospace;
+    margin-left: 600px;
+    position: relative;
+}
+
+.all{
+    color: #a6e1fa;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family:"Space Mono", monospace;
+    margin-left: 600px;
+    width: 700px;
+    
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.items-case1{
+    background-color:  #0a2472;
+    width: 100%;
+    height: 1300px;
+    margin-top: 2300px;
+    position: absolute;
+}
+
+.item-1-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    gap: 20;
+    margin-left: 300px;
+    position: absolute;
+    margin-top: 170px;
+}
+
+.item-2-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 2470px;
+}
+
+.item-3-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    margin-top: 2470px;
+    gap: 20;
+    margin-left: 1300px;
+    position: absolute;
+}
+
+.item-4-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    position: absolute;
+    margin-left: 1800px;
+    margin-top: 2470px;
+}
+
+.img-coin-1 , .img-coin-2 , .img-coin-3 , .img-coin-4{
+    width: 70px;
+    height: 70px;
+}
+.img-coin-1{
+    margin-left: 350px;
+    margin-top: -20px;
+}
+
+.img-coin-2 {
+    position: relative; /* Зберігання потоку документа, відносне позиціонування */
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+
+.img-coin-2-1 {
+    position: relative; /* Зберігання потоку документа, відносне позиціонування */
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-3 {
+    position: relative; 
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+.img-coin-3-1{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-3-2{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 340px;
+    margin-top: -110px;
+    z-index: 6;
+}
+
+.img-coin-4 {
+    position: relative; 
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+.img-coin-4-1{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-4-2{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 340px;
+    margin-top: -110px;
+    z-index: 6;
+}
+.img-coin-4-3{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 380px;
+    margin-top: -90px;
+    z-index: 6;
+}
+
+.buy-1 , .buy-2 , .buy-3 , .buy-4{
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 11px;
+    margin: 350px 0 0 100px;
+    color: #0c2b89;
+}
+
+.class-1{
+    position: absolute;
+    bottom: 450px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+}
+
+.how-many-1{
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+    bottom: 250px;
+    position: absolute;
+}
+
+.price-1{
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+    bottom: 130px;
+    position: absolute;
+}
+.deal-coins {
+    font-size: 60px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+    position: absolute;
+    left:1000px
+}
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 500px) {
+    .wsp{
+        font-size: 25px;
+        margin-left: 10%;
+        margin-top: 200px;
+    }
+    .info1-1{
+            margin-left: 30%;
+            width: 250px;
+            font-size: 20px;
+            margin-left: 10%;
+            margin-top: 50px;
+    }
+    .my-avatar{
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+    .world{
+        margin-left: 65px;
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .wsp{
+        margin-left: 40%;
+    }
+    .info1-1{
+        margin-left: 40%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .wsp{
+        margin-left: 40%;
+        font-size: 30px;
+    }
+    .info1-1{
+        margin-left: 40%;
+        width: 300px;
+        font-size: 20px;
+    }
+         .my-avatar{
+            margin-left: 50px;
+            width: 70px;
+            height: 70px;
+        }
+        .world{
+            margin-left: 85px;
+            font-size: 30;
+            margin-top: 240px;
+        }
+    }
+
+@media (max-width: 1000px) {
+
+    .wsp{
+        margin-left: 40%;
+    }
+    .info1-1{
+        margin-left: 40%;
+        width: 400px;
+    }
+    .my-avatar{
+        margin-left: 100px;
+    }
+    .world{
+        margin-left: 160px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .wsp{
+        margin-left: 50%;
+    }
+    .info1-1{
+        margin-left: 50%;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .house{
+        margin-left: 200px;
+     }
+   .Choose , .Travel{
+     margin-left: 800px;
+   }
+   .Choose{
+     font-size: 40px;
+   }
+   .Travel{
+     font-size: 20px;
+     width: 300px;
+   }
+
+}
+
+    @media (max-width: 1850px) {
+        .house{
+           margin-left: 200px;
+        }
+      .Choose , .Travel{
+        margin-left: 800px;
+      }
+      .Choose{
+        font-size: 40px;
+      }
+      .Travel{
+        font-size: 20px;
+      }
+
+      .bar{
+        margin-left: 800px;
+      }
+      .our , .all{
+        margin-left: 300px;
+      }
+      .our{
+        font-size: 40px;
+      }
+      .all{
+        font-size: 20px;
+        width: 400px;
+      }
+    }
+    @media (max-width: 1300px) {
+        .house{
+            margin-left: 100px;
+            width: 300px;
+            height: 300px;
+        }
+        .Choose{
+            font-size: 30px;
+            margin: 250px 0 0 500px
+        }
+        .Travel{
+            font-size: 15px;
+            margin: 50px 0 0 500px;
+        }
+        .bar{
+            margin-left: 500px;
+            width: 300px;
+            height: 300px;
+        }
+        .our{
+            font-size: 30px;
+            margin: 250px 0 0 100px
+        }
+        .all{
+            font-size: 15px;
+            margin: 50px 0 0 100px;
+        }
+    }
+
+
+    @media (max-width: 900px) {
+        .Features-burger{
+            margin-left: 30px;
+        }
+    }
+ 
+    @media (max-width: 2270px) { 
+ .item-1-case-1{
+    margin-left: 100px;
+  }
+  .item-2-case-1{
+    margin-left: 600px;
+  }
+  .item-3-case-1{
+    margin-left: 1100px;
+  }
+  .item-4-case-1{
+    margin-left: 1600px;
+  }
+    }
+
+    @media (max-width: 2070px) {
+        .item-1-case-1 , .item-2-case-1 , .item-3-case-1 , .item-4-case-1 {
+            width: 300px;
+            height: 400px;
+    }
+    .item-2-case-1{
+        margin-left: 450px;
+    }
+.coins-div-2{
+    margin-left: -80px;
+}
+    .item-3-case-1{
+        margin-left: 800px;
+    }
+
+.coins-div-3{
+    margin-left: -80px;
+}
+    
+.item-4-case-1{
+    margin-left: 1150px;
+}
+.coins-div-4{
+    margin-left: -80px;
+}
+
+.class-1{
+    top: 30px;
+}
+
+.buy-1 , .buy-2 , .buy-3 , .buy-4{
+    top: -30px;
+    left: -50px;
+    position: absolute;
+}
+
+.img-coin-1  {
+    margin-left: 250px;
+
+}
+
+    }   
+
+    @media (max-width: 1570px) {
+        .item-3-case-1{
+            top: 1500px;
+            margin-left: 400px;
+        }
+        .item-4-case-1{
+            top: 1500px;
+            margin-left: 800px;
+        }
+
+        .item-1-case-1{
+            margin-left: 400px;
+        }
+        .item-2-case-1{
+            margin-left: 800px;
+        }
+        .deal-coins{
+        left: 600px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .deal-coins{
+            top: -300px;
+            margin-left: -200px;
+        }
+        .item-1-case-1{
+            margin: 0 10% 0 10%;
+            width: 80%;
+        }
+        .img-coin-1{
+            margin-left: 90%;
+        }
+        .item-2-case-1{
+            margin: 0 10% 0 10%;
+            width: 80%;
+            margin-top: 2800px;
+        }
+        .img-coin-2{
+          margin-left: 90%;
+        }
+        .img-coin-2-1{
+            margin-left: 93%;
+          }
+        .item-3-case-1{
+            margin: 0 10% 0 10%;
+            width: 80%;
+            margin-top: 2700px;
+        }
+        .img-coin-3{
+            margin-left: 90%;
+          }
+          .img-coin-3-1{
+              margin-left: 93%;
+            }
+            .img-coin-3-2{
+                margin-left: 91%;
+              }
+
+              .img-coin-4{
+                margin-left: 90%;
+              }
+              .img-coin-4-1{
+                  margin-left: 93%;
+                }
+                .img-coin-4-2{
+                    margin-left: 91%;
+                  }
+                  .img-coin-4-3{
+                    margin-left: 89%;
+                  }
+
+        .item-4-case-1{
+            margin: 0 10% 0 10%;
+            width: 80%;
+            margin-top: 3200px;
+        }
+        .items-case1{
+            height: 2100px;
+        }
+        .buy-1 , .buy-2 , .buy-3 , .buy-4{
+            width:80%;
+            padding-right: -15%;
+        }
+    }
+
+      
+    @media (max-width: 900px) {
+        .item-3-case-1{
+            top: 1100px;
+        }
+        .item-4-case-1{
+            top: 1100px;
+        }
+     
+        .text {
+            font-size: 33px;
+        }
+        .deal-coins{
+            margin-left: -400px;
+        }
+        #meny{
+            width: 200px;
+            height: 400px;
+        }
+        .Discover-burger , .Templates-burger , .Features-burger , .Updates-burger{
+            padding-left: 10px;
+            border: none;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .deal-coins{
+            margin-left: -500px;
+            font-size: 40px;
+        }
+    }
+    /* .img-coin-3 , .img-coin-4 , .img-coin-3-1 , .img-coin-3-2 , .img-coin-4-1 , .img-coin-4-2 , .img-coin-4-3 */
+ /* ---------------------------------------------------------------------------- */
+
+
+ /* .item-1-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    gap: 20;
+    margin-left: 300px;
+    position: absolute;
+    margin-top: 170px;
+}
+
+.item-2-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 2470px;
+}
+
+.item-3-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    margin-top: 2470px;
+    gap: 20;
+    margin-left: 1300px;
+    position: absolute;
+}
+
+.item-4-case-1{
+    border-radius: 30px;
+    background-color: #0c2b89;
+    width: 400px;
+    height: 500px;
+    z-index: 105;
+    position: absolute;
+    margin-left: 1800px;
+    margin-top: 2470px;
+}
+
+.img-coin-1 , .img-coin-2 , .img-coin-3 , .img-coin-4{
+    width: 70px;
+    height: 70px;
+}
+.img-coin-1{
+    margin-left: 350px;
+    margin-top: -20px;
+}
+
+.img-coin-2 {
+    position: relative; 
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+
+.img-coin-2-1 {
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-3 {
+    position: relative; 
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+.img-coin-3-1{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-3-2{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 340px;
+    margin-top: -110px;
+    z-index: 6;
+}
+
+.img-coin-4 {
+    position: relative; 
+    margin-left: 350px;
+    margin-top: -20px;
+    z-index: 3;
+}
+.img-coin-4-1{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: -90px;
+    z-index: 0;
+}
+
+.img-coin-4-2{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 340px;
+    margin-top: -110px;
+    z-index: 6;
+}
+.img-coin-4-3{
+    position: relative; 
+    width: 70px;
+    height: 70px;
+    margin-left: 380px;
+    margin-top: -90px;
+    z-index: 6;
+}
+
+.buy-1 , .buy-2 , .buy-3 , .buy-4{
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 11px;
+    margin: 350px 0 0 100px;
+    color: #0c2b89;
+}
+
+.class-1{
+    position: absolute;
+    bottom: 450px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+}
+
+.how-many-1{
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+    bottom: 250px;
+    position: absolute;
+}
+
+.price-1{
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Space Mono", monospace;
+    color: #eee;
+    bottom: 180px;
+    position: absolute;
+} */
